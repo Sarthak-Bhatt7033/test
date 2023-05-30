@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <title>Menu | Olive Garden Restaurant Group</title>
+  <!-- aos library css  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="vendors/reset.css">
+  <link rel="stylesheet" href="css/globalstyle.css">
+  <link rel="stylesheet" href="css/components.css">
+  
+         <!-- Add your custom css -->
+  <link rel="stylesheet" href="./mocktails.html">
+    <style>
+      
+/* Mocktails Grid */
+
+.mocktailGrid__title {
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+	font-weight: 600;
+	color: var(--black-1);
+}
+.mocktailGrid__wrapper {
+	display: grid;
+	grid-template-columns: repeat(autofit, minmax(140px, 1fr)); 
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	gap: 1rem;
+}
+.mocktailGrid__item {
+	display: flex;
+	background-color: var(--lightGreen-1);
+	padding: 1.5rem;
+	border-radius: 8px;
+	gap: 0.5rem;
+}
+.mocktailGrid__item__img {
+	flex: 4;
+}
+.mocktailGrid__item__info {
+	flex: 5;
+}
+.mocktailGrid__item__img img {
+	object-fit: cover;
+	border-radius: 12px;
+}
+.mocktailGrid__item__title {
+	font-size: 1.4rem;
+	line-height: 1.3em;
+	font-weight: 500;
+	color: var(--black-1);
+	margin-bottom: 0.5rem;
+}
+.mocktailGrid__item__price {
+	font-size: 1.4rem;
+	color: var(--green-1);
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+.mocktailGrid__item__stars {
+	max-height: 15px;
+	width: max-content;
+}
+@media only screen and (min-width: 768px) {
+	.mocktailGrid__title {
+		font-size: 2.4rem;
+	}
+	.mocktailGrid__wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		 gap: 3rem; 
+	}
+	.mocktailGrid__item {
+		flex-direction: row;
+		padding: 0.5rem;
+		border-radius: 12px;
+		gap: 1rem;
+	}
+	.mocktailGrid__item__title {
+		font-size: 2.4rem;
+		margin-bottom: 1rem;
+	}
+	.mocktailGrid__item__price {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+}
+/* Mocktails Grid */
+
+        </style>
+</head>
+<body>
+  
+  <!-- Add your custom css -->
+  <link rel="stylesheet" href="./css/menu.css">
+</head>
+
+
+  <!-- Nav Section -->
+  <div class="nav">
+    <div class="container">
+      <div class="nav__wrapper">
+        <a href="./index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Olive Garden (Italic Resturant)">
+        </a>
+        <nav>
+          <div class="nav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-menu">
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </div>
+          <div class="nav__bgOverlay"></div>
+          <ul class="nav__list">
+            <div class="nav__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-x">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+            <div class="nav__list__wrapper">
+
+              <li><a class="nav__link" href="./index.html">Home</a></li>
+              <li><a class="nav__link" href="./about.html">About</a></li>
+              <li><a class="nav__link" href="./contact.html">Contact</a></li>
+              <li><a class="nav__link" href="./menu.html">Menu</a></li>
+              <li><a href="booking.html" class="btn primary-btn">Book Table</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- End Nav Section -->
+
+      <!-- FooterMenu -->
+      <div class="MenuOption">
+        <div class="container">
+          <div class="MenuOption__main__title">
+            <h1>Menu Options</h1>
+          </div>
+          <div class="MenuOption__wrapper">
+            
+              
+            
+            <ol class="MenuOption__list">
+            <div class="MenuOption__list__wrapper">
+                  <li><a class="MenuOption__link" href="./beverages.html">Beverages</a></li>
+                  <li><a class="MenuOption__link" href="./breakfast.html">Breakfast</a></li>
+                  <li><a class="MenuOption__link" href="./soup.html">Soup</a></li>
+                  <li><a class="MenuOption__link" href="./pasta.html">Pasta</a></li>
+                  <li><a class="MenuOption__link" href="./pizza.html">Pizza</a></li>
+                  <li><a class="MenuOption__link" href="./risotto.html">Risotto</a></li>
+                  <li><a class="MenuOption__link" href="./bread.html">Bread</a></li>
+                  <li><a class="MenuOption__link" href="./sauce.html">Sauce</a></li>
+                  <li><a class="MenuOption__link" href="./cheese.html">Cheese</a></li>
+                  <li><a class="MenuOption__link" href="./mocktails.html">Mocktails</a></li>
+                  <li><a class="MenuOption__link" href="./gelato.html">Gelato</a></li>
+
+                </div>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+<!--FooterMenu-->
+    
+        
+<!--Mocktails-->
+<section id="mocktailGrid" data-aos="fade-up">
+  <div class="container">
+    <h2 class="mocktailGrid__title">
+       Italian Mocktail's
+    </h2>
+    <div class="mocktailGrid__wrapper">
+      <div class="mocktailGrid__item">
+        <div class="mocktailGrid__item__img">
+          <img src="./assets/images/m1.jpg" alt="Negroni">
+        </div>
+        <div class="mocktailGrid__item__info">
+          <h3 class="mocktailGrid__item__title">
+            Negroni
+          </h3>
+          <h3 class="mocktailGrid__item__price">$12</h3>
+          <div class="mocktailGrid__item__stars">
+            <img src="./assets/images/star.png" alt="4 star">
+          </div>
+        </div>
+      </div>
+      <div class="mocktailGrid__item">
+        <div class="mocktailGrid__item__img">
+          <img src="./assets/images/m2.webp" alt="Campari">
+        </div>
+        <div class="mocktailGrid__item__info">
+          <h3 class="mocktailGrid__item__title">
+            Campari
+          </h3>
+          <h3 class="mocktailGrid__item__price">$12</h3>
+          <div class="mocktailGrid__item__stars">
+            <img src="./assets/images/star.png" alt="4 star">
+          </div>
+        </div>
+      </div>
+      <div class="mocktailGrid__item">
+        <div class="mocktailGrid__item__img">
+          <img src="./assets/images/m3.jpg" alt="Americano">
+        </div>
+        <div class="mocktailGrid__item__info">
+          <h3 class="mocktailGrid__item__title">
+            Americano 
+          </h3>
+          <h3 class="mocktailGrid__item__price">$12</h3>
+          <div class="mocktailGrid__item__stars">
+            <img src="./assets/images/star.png" alt="4 star">
+          </div>
+        </div>
+      </div>
+      <div class="mocktailGrid__item">
+        <div class="mocktailGrid__item__img">
+          <img src="./assets/images/m4.jpg" alt="Bellini">
+        </div>
+        <div class="mocktailGrid__item__info">
+          <h3 class="mocktailGrid__item__title">
+            Bellini
+          </h3>
+          <h3 class="mocktailGrid__item__price">$12</h3>
+          <div class="mocktailGrid__item__stars">
+            <img src="./assets/images/star.png "alt="4 star">
+          </div>
+        </div>
+      </div>
+      <div class="mocktailGrid__item">
+        <div class="mocktailGrid__item__img">
+          <img src="./assets/images/m5.jpg" alt="Amaretto">
+        </div>
+        <div class="mocktailGrid__item__info">
+          <h3 class="mocktailGrid__item__title">
+            Amaretto
+          </h3>
+          <h3 class="mocktailGrid__item__price">$12</h3>
+          <div class="mocktailGrid__item__stars">
+            <img src="./assets/images/star.png" alt="4 star">
+          </div>
+        </div>
+      </div>
+      <div class="mocktailGrid__item">
+        <div class="mocktailGrid__item__img">
+          <img src="./assets/images/m6.jpg" alt="Limoncello">
+        </div>
+        <div class="mocktailGrid__item__info">
+          <h3 class="mocktailGrid__item__title">
+            Limoncello 
+          </h3>
+          <h3 class="mocktailGrid__item__price">$12</h3>
+          <div class="mocktailGrid__item__stars">
+            <img src="./assets/images/star.png" alt="4 star">
+          </div>
+        </div>
+      </div>
+      <div class="mocktailGrid__item">
+        <div class="mocktailGrid__item__img">
+          <img src="./assets/images/m7.webp" alt="Aperol">
+        </div>
+        <div class="mocktailGrid__item__info">
+          <h3 class="mocktailGrid__item__title">
+            Aperol
+         </h3>
+          <h3 class="mocktailGrid__item__price">$12</h3>
+          <div class="mocktailGrid__item__stars">
+            <img src="./assets/images/star.png" alt="4 star">
+          </div>
+        </div>
+      </div>
+      <div class="mocktailGrid__item">
+        <div class="mocktailGrid__item__img">
+          <img src="./assets/images/m8.jpg" alt="Prosecco">
+        </div>
+        <div class="mocktailGrid__item__info">
+          <h3 class="mocktailGrid__item__title">
+            Prosecco
+          </h3>
+          <h3 class="mocktailGrid__item__price">$12</h3>
+          <div class="mocktailGrid__item__stars">
+            <img src="./assets/images/star.png" alt="4 star">
+          </div>
+        </div>
+      </div>
+      <div class="mocktailGrid__item">
+        <div class="mocktailGrid__item__img">
+          <img src="./assets/images/m9.jpg" alt="Vermouth">
+        </div>
+        <div class="mocktailGrid__item__info">
+          <h3 class="mocktailGrid__item__title">
+            Vermouth
+          </h3>
+          <h3 class="mocktailGrid__item__price">$12</h3>
+          <div class="mocktailGrid__item__stars">
+            <img src="./assets/images/star.png" alt="4 star">
+           </div>
+          </div>
+        </div>
+        <div class="mocktailGrid__item">
+          <div class="mocktailGrid__item__img">
+            <img src="./assets/images/m10.jpg" alt="Grappa">
+          </div>
+          <div class="mocktailGrid__item__info">
+            <h3 class="mocktailGrid__item__title">
+                Grappa
+            </h3>
+            <h3 class="mocktailGrid__item__price">$12</h3>
+            <div class="mocktailGrid__item__stars">
+              <img src="./assets/images/star.png" alt="4 star">
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="dishGrid__button">
+        <a href="./menu.html" class="dishGrid__button">←	Back to Main Menu</a>
+        </h2>
+    </div>
+  </section>
+  <!--Mocktails-->
+     
+           
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__col1">
+          <div class="footer__logo">
+            <img src="./assets/images/logo.png" alt=" Olive Garden (Italic Resturant)">
+          </div>
+          <p class="footer__desc">
+            Fresh and delicious traditional deligthful Italian food.
+          </p>
+          <div class="footer__socials">
+            <h4 class="footer__socials__title">Follow us</h4>
+            <ol class="footer__socials__list">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-facebook">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-instagram">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-twitter">
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                  </svg>
+                  
+                                         
+                </a>
+              </li>
+              <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    >
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+              </a>
+            
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="footer__col2">
+          <h3 class="footer__text__title">
+            Links
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="./menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="./booking.html">Book Table</a>
+            </li>
+            <li>
+              <a href="./about.html">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html">contact Us</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ol>
+        </div>
+        <div class="footer__col3">
+          <h3 class="footer__text__title">
+            Support
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Support Center</a>
+            </li>
+            <li>
+              <a href="#">Feedback</a>
+            </li>
+          </ol>
+        </div>
+        <div class="footer__col4">
+          <h3 class="footer__text__title">
+            Contact
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="#">+91 74000 15539</a>
+            </li>
+            <li>
+              <a href="#">olivegardengroup@gmail.com</a>
+            </li>
+            <li>
+              <a href="#">Satya Sai Krupa Building, Satya Nagar, Borivali West, Mumbai</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="copyright">
+    <div class="container">
+      <p class="copyright__text">
+        © copyright 2023 Olive Garden | All rights reserved<center><br>Made By:- Sarthak Bhatt</br></center>
+      </p>
+    </div>
+  </div>
+  <!-- End Footer -->
+    
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--custom script-->
+    <script src="./js/main.js"></script>
+     
+</body>
+</html>
